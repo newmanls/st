@@ -1,5 +1,7 @@
 *.orig
 *.rej
+boxdraw.o
+hb.o
 st
 st.o
 x.o
