@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Nerd Font Mono:size=11:antialias=true";
+static char *font = "monospace-10";
 /* Spare fonts */
 static char *font2[] = {
-        "Noto Color Emoji:size=11:antialias=true:autohint=true"
+        "Noto Color Emoji-11"
 };
 
 static int borderpx = 8;
@@ -164,8 +164,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 120;
-static unsigned int rows = 32;
+static unsigned int cols = 80;
+static unsigned int rows = 20;
 
 /*
  * Xresources preferences to load at startup
