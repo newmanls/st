@@ -6,6 +6,11 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "monospace-10";
+/* Spare fonts */
+static char *font2[] = {
+	"Noto Color Emoji-9"
+};
+
 static int borderpx = 2;
 
 /*
