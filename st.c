@@ -1058,6 +1058,11 @@ tsetdirt(int top, int bot)
 		term.dirty[i] = 1;
 }
 
+int tisaltscr(void)
+{
+	return IS_SET(MODE_ALTSCREEN);
+}
+
 void
 tsetdirtattr(int attr)
 {

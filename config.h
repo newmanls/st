@@ -228,8 +228,10 @@ ResourcePref resources[] = {
  * Beware that overloading Button1 will disable the selection.
  */
 static MouseShortcut mshortcuts[] = {
-	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
+	/* mask                 button   function        argument   release */
+	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 1},  0,	-1 },
+	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 1},  0,	-1 },
+	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},  1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
@@ -256,6 +258,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ MODKEY,               XK_y,           copyurl,        {.i =  0} },
+        { MODKEY,               XK_k,           kscrollup,      {.i =  1} },
+        { MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
 };
