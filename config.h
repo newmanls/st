@@ -11,7 +11,7 @@ static char *font2[] = {
 	"Noto Color Emoji-9"
 };
 
-static int borderpx = 8;
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
